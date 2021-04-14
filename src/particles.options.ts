@@ -3,70 +3,46 @@ import {ISourceOptions} from 'react-tsparticles'
 const options: ISourceOptions = {
   background: {
     color: {
-      value: "#0d47a1",
+      value: "#fafafa",
     },
   },
-  fpsLimit: 60,
+  fpsLimit: 120,
   interactivity: {
     detectsOn: "canvas",
-    events: {
-      onClick: {
-        enable: true,
-        mode: "push",
-      },
-      onHover: {
-        enable: true,
-        mode: "repulse",
-      },
-      resize: true,
-    },
     modes: {
-      bubble: {
-        distance: 400,
-        duration: 2,
-        opacity: 0.8,
-        size: 40,
-      },
       push: {
-        quantity: 4,
-      },
-      repulse: {
-        distance: 200,
-        duration: 0.4,
+        quantity: 5,
       },
     },
   },
   particles: {
     color: {
-      value: "#ffffff",
+      value: "#666666",
     },
-    links: {
-      color: "#ffffff",
-      distance: 150,
-      enable: true,
-      opacity: 0.5,
-      width: 1,
-    },
-    collisions: {
-      enable: true,
+    line_linked: {
+      enable: false,
     },
     move: {
-      direction: "none",
+      direction: "left",
       enable: true,
-      outMode: "bounce",
       random: false,
-      speed: 6,
+      speed: 4,
       straight: false,
     },
     number: {
       density: {
         enable: true,
-        value_area: 800,
+        value_area: 1000,
       },
-      value: 80,
+      value: 30,
     },
     opacity: {
       value: 0.5,
+      anim: {
+        enable: true,
+        speed: 0.7,
+        opacity_min: 0,
+      },
     },
     shape: {
       type: "circle",

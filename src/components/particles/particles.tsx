@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
-import TSParticles, { Main, Container } from 'react-tsparticles'
-import particlesOptions from '../../particles.options'
+import TSParticles, { Main, Container } from 'react-tsparticles';
+import particlesOptions from '../../particles.options';
 
 const Particles: FC = () => {
   const particlesInit = (main: Main) => {
@@ -9,7 +9,7 @@ const Particles: FC = () => {
 
   const particlesLoaded = (container: Container) => {
     console.log('container:', container);
-  }
+  };
 
 
   return (
@@ -22,6 +22,6 @@ const Particles: FC = () => {
       />
     </div>
   );
-}
+};
 
 export default Particles;

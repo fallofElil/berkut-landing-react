@@ -6,7 +6,7 @@ type LogoProps = {
 }
 
 const Logo: FC<LogoProps> = ({ title = 'D. Berkut' }) => {
-  return <span className={styles.logo}>{title}</span>
-}
+  return <span className={styles.logo}>{title}</span>;
+};
 
 export default Logo;

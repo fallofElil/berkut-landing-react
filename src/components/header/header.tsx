@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 
 import ButtonBurger from '../button-burger/button-burger';
-import Logo from "../logo/logo";
+import Logo from '../logo/logo';
 import styles from './header.module.css';
 
 const Header: FC = () => {
@@ -10,7 +10,7 @@ const Header: FC = () => {
       <Logo />
       <ButtonBurger onClick={() => console.log('noop')} />
     </header>
-  )
-}
+  );
+};
 
 export default Header;

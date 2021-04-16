@@ -1,14 +1,14 @@
-import {ISourceOptions} from 'react-tsparticles'
+import {ISourceOptions} from 'react-tsparticles';
 
 const options: ISourceOptions = {
   background: {
     color: {
-      value: "#fafafa",
+      value: '#fafafa',
     },
   },
   fpsLimit: 120,
   interactivity: {
-    detectsOn: "canvas",
+    detectsOn: 'canvas',
     modes: {
       push: {
         quantity: 5,
@@ -17,13 +17,13 @@ const options: ISourceOptions = {
   },
   particles: {
     color: {
-      value: "#666666",
+      value: '#666666',
     },
     line_linked: {
       enable: false,
     },
     move: {
-      direction: "left",
+      direction: 'left',
       enable: true,
       random: false,
       speed: 4,
@@ -45,7 +45,7 @@ const options: ISourceOptions = {
       },
     },
     shape: {
-      type: "circle",
+      type: 'circle',
     },
     size: {
       random: true,
@@ -53,6 +53,6 @@ const options: ISourceOptions = {
     },
   },
   detectRetina: true,
-}
+};
 
 export default options;
